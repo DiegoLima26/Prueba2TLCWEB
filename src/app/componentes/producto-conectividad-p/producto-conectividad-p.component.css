@@ -1,0 +1,129 @@
+.claseSubCategoriaConectividad
+{
+  margin: 0px;
+  box-sizing: border-box;
+}
+.claseProductosConector
+{
+  box-sizing: border-box;
+  margin: 0px;
+}
+.tituloConector
+{
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding: 25px 10px;
+  position: relative;
+  display: flex;
+  font-family: futura-light-bt;
+  background-color: rgb(255, 255, 255);
+}
+.tituloConector h1
+{
+  margin: 0px;
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(36, 36, 187);
+}
+.tituloConector .flechasSubProd
+{
+  margin: 0px;
+  padding-left: 10px;
+  font-size: 25px;
+  color: rgb(99, 101, 102);
+  cursor: pointer;
+}
+.tituloConector .flechasSubProd .mostrarProdF
+{
+  margin: 0px;
+  display: inline-block;
+}
+.tituloConector .flechasSubProd .mostrarProdF.mostrarPFOn
+{
+  display: none;
+}
+.tituloConector .flechasSubProd .ocultarProdF
+{
+  margin: 0px;
+  position: absolute;
+  top: 35px;
+  box-sizing: border-box;
+  display: none;
+}
+.tituloConector .flechasSubProd .ocultarProdF.mostrarOFOn
+{
+  display: inline-block;
+}
+.cuerpoCategoria
+{
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding-bottom: 30px;
+  width: 95%;
+  display: none;
+  grid-template-columns: repeat(3,minmax(300px,1fr)); 
+  grid-gap: 10px;
+}
+.cuerpoCategoria.ocultarSubProd
+{
+  display: grid;
+}
+.itemSubProducto
+{
+  margin: 0px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+}
+.imgItemSubProducto > a
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 86%;
+  background: rgba(245, 245, 245, 0.8);
+  color: rgb(36, 36, 187);
+  font-size: 45px;
+  font-family: futura-light-bt;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .8s;
+}
+.imgItemSubProducto:hover .verfAlmacen 
+{
+  opacity: 1;
+}
+.imgItemSubProducto
+{
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-bottom: 1px solid rgba(245, 124, 0, 0.3);
+}
+.imgItemSubProducto > img
+{
+  margin: 0px;
+  width: 100%;
+  object-fit: cover;
+}
+.caracteristicasItemSubProd
+{
+  margin: 0px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 90%;
+  font-family: futura-light-bt;
+}
+.caracteristicasItemSubProd > p
+{
+  margin: 0px;
+  box-sizing: border-box;
+  color: rgb(99, 101, 102);
+  font-size: 16px;
+}
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡------------- Inicio clases del div contenedorProductos ------------!!!!!!!!!!!!!!!!!*/

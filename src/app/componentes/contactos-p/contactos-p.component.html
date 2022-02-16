@@ -1,0 +1,139 @@
+<div class="clasContactos">
+    <div class="tituloContactos">
+        <h1><i class="fas fa-home"></i>> Contactos</h1>
+    </div>
+    <div class="tituloTx">
+        <h1>CONTACTANOS</h1>
+    </div>
+    <div class="bannerContacto">
+        <img src="assets/ImgBanerContactos/imgContactos.png"  alt="preguntas"/>
+        <div class="centraT">
+            <div class="mensajeIzquierda">
+              <p><span>*</span> Buscas mas información acerca de nosotros.</p>
+              <p><span>*</span> Necesitas ayuda para encontrar algun producto.</p>
+              <p>Elije una de estas opciones para ponernos en contacto.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contCont">
+        <div class="cabezaMetodo">
+            <h1>Solicite una cotizacion</h1>
+            <i class="fas fa-sort-down"></i>
+        </div>
+        <div class="cuerpoMetodo">
+            <div class="cuerpoCotizacion">
+                <div class="parrafoCot">
+                    <p>Si quieres una atencion personalizada contacta con uno de nuestros vendedores dejando tu nombre,
+                        tu correo electronico y los productos de los cuales quieres una cotizacion.</p>
+                </div>
+                <form class="formulario">
+                    <div class="grupoForm">
+                        <input class="inputForm" type="text" id="nombreC"  required><span class="barra"></span>
+                        <i class="far fa-user"></i>
+                        <label for="">Nombre</label>
+                    </div>
+                    <div class="grupoForm">
+                        <input class="inputForm" type="text" id="consultaC"  required><span class="barra"></span>
+                        <i class="far fa-edit"></i>
+                        <label for="">Consulta</label>
+                    </div>
+                    <div class="grupoForm">
+                        <input class="inputForm" type="email" id="correoC"  required><span class="barra"></span>
+                        <i class="fas fa-at"></i>
+                        <label for="">Correo electronico</label>
+                    </div>
+                    <button type="submit" class="botonFormulario">Cotizar</button>
+                </form>
+            </div>
+        </div>
+        <div class="cabezaMetodo">
+            <h1>Servicio al cliente</h1>
+            <i class="fas fa-sort-down"></i>
+        </div>
+        <div class="cuerpoMetodoCliente">
+            <div class="parrafo1">
+                <p>Comuniquese directamente con uno de nuestros agentes de venta que le ayudaran a encontrar el producto que usted necesita</p>
+            </div>
+            <div class="parrafo2">
+                <h1>Oficina Central La Paz</h1>
+                <h2>Telefono agente de venta:</h2>
+                <p>+591-2-2282563</p>
+                <h1>Oficina Central Cochabamba</h1>
+                <h2>Telefono agente de venta:</h2>
+                <p>+591-2-2282563</p>
+                <h1>Tienda sucursal Cochabamba</h1>
+                <h2>Telefono agente de venta:</h2>
+                <p>+591-2-2282563</p>
+            </div>
+        </div>
+        <div class="cabezaMetodo">
+            <h1>Aproximese a nuestras oficinas</h1>
+            <i class="fas fa-sort-down"></i>
+        </div>
+        <div class="cuerpoMetodo">
+            <div class="contTarjContacto">
+                <div class="con1">
+                    <div class="headerCon1">
+                        <h1>LA PAZ</h1>
+                        <p>Oficina Central</p>
+                    </div>
+                    <div class="bodyCon1">
+                        <p><i class="fas fa-map-marked-alt"></i>Av. Uruguay #471 entre Av.Montes y Perú (cerca Terminal de Buses)</p>
+                        <p><i class="fas fa-phone-alt"></i>Telefono: +591-2-2282563</p>
+                        <p><i class="fas fa-mobile-alt"></i>Celular: +591-73008000</p>
+                        <p><i class="fas fa-city"></i>La Paz - Bolivia</p>
+                    </div>
+                </div>
+                <div class="con2">
+                    <div class="con2C">
+                        <google-map  width="100%" height="100%" [options]="options">
+                            <map-marker [position]="posicion" [label]="label" [options]="options1" ></map-marker>
+                        </google-map>
+                    </div>
+                </div>
+            </div>
+            <div class="contTarjContacto">
+                <div class="con1">
+                    <div class="headerCon1">
+                        <h1>COCHABAMBA</h1>
+                        <p>Oficina Sucursal</p>
+                    </div>
+                    <div class="bodyCon1">
+                        <p><i class="fas fa-map-marked-alt"></i>C. Jose Antonio Zegada #16 entre C.Lucas Mendoza y Alcides Arguedas</p> 
+                        <p><i class="fas fa-phone-alt"></i>Telefono: +591-4-4444444</p>
+                        <p><i class="fas fa-mobile-alt"></i>Celular: +591-72535453</p>
+                        <p><i class="fas fa-city"></i>Cochabamba - Bolivia</p>
+                    </div>
+                </div>
+                <div class="con2">
+                    <div class="con2C">
+                        <google-map width="100%" height="100%" [center]="posicion1" [zoom]="zoom">
+                            <map-marker [position]="posicion1" [label]="label" [options]="options1" ></map-marker>
+                        </google-map>
+                    </div>
+                </div>
+            </div>
+            <div class="contTarjContacto">
+                <div class="con1">
+                    <div class="headerCon1">
+                        <h1>COCHABAMBA</h1>
+                        <p>Tienda Sucursal</p>
+                    </div>
+                    <div class="bodyCon1">
+                        <p><i class="fas fa-map-marked-alt"></i>Av. Heroinas entre Av.Ayacucho y C. Junin (Esquina Junin)</p> 
+                        <p><i class="fas fa-phone-alt"></i>Telefono: +591-4-4444444</p>
+                        <p><i class="fas fa-mobile-alt"></i>Celular: +591-76469024</p>
+                        <p><i class="fas fa-city"></i>Cochabamba - Bolivia</p>
+                    </div>
+                </div>
+                <div class="con2">
+                    <div class="con2C">
+                        <google-map width="100%" height="100%" [center]="posicion1" [zoom]="zoom">
+                            <map-marker [position]="posicion1" [label]="label" [options]="options1" ></map-marker>
+                        </google-map>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

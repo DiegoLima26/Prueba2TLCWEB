@@ -1,0 +1,295 @@
+<div class="paginaPrincipal">
+  <div class="infoFast">
+    <div class="redesSociales">
+      <h1><i class="fas fa-phone-alt"></i>  (+591)77768935</h1>
+      <h1><i class="far fa-envelope"></i> ventas@tlcsrl.com.bo</h1>
+    </div>
+    <div class="contactosLogIn">
+      <h1><i class="far fa-user"></i> Ingresar</h1>
+    </div>
+  </div>
+  <div class="menuRapido">
+    <div class="menuRapido1">
+      <div class="logoTLC">
+        <h1>TLC<span>SRL</span></h1>
+      </div>
+      <div class="menuPrincipal">
+        <ul class="linkMenu">
+          <li><a class="menuBtnHome" (click)="mostrarPagina('inicioP')"><i class="fas fa-home"></i></a></li>
+          <li><a class="menuBtnProductos">PRODUCTOS <i class="fas fa-chevron-down"></i></a></li>
+          <li><a class="menuBtnServicios" (click)="mostrarPagina('serviciosP')" (click)="mostrarServicios()">SERVICIOS</a></li>
+          <li><a class="menuBtnCompra" (click)="mostrarPagina('contactosP')">COMO COMPRAR</a></li>
+          <li><a class="menuBtnAcerca" (click)="mostrarPagina('acercaDe')">ACERCA DE</a></li>
+        </ul>
+        <div class="menuResponsivo">
+          <button alt="Buscar"><i class="fas fa-search"></i></button>
+          <button alt="Menu"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+      <div class="busquedaP">
+        <input class="busquedaProd" id="busquedaMenuFast" name="buscarMenu" type="text" placeholder="Busca tu producto">
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+    <div class="subMenuProductos">
+      <div class="subProductoGrid">
+        <div class="subProductoCat">
+          <button class="btnGridBack" title="Regresar"><i class="far fa-arrow-alt-circle-left"></i></button>
+          <h2 class="tituloResp">Categorias</h2>
+          <a class="linkCatProd" catProdTienda="fibraOptica">Fibra Optica<i class="fas fa-chevron-right"></i></a>
+          <a class="linkCatProd" catProdTienda="conectOptica">Conectividad Optica<i class="fas fa-chevron-right"></i></a>
+          <a class="linkCatProd" catProdTienda="instInternas">Instalaciones Internas<i class="fas fa-chevron-right"></i></a>
+          <a class="linkCatProd" catProdTienda="instExternas">Instalaciones Externas<i class="fas fa-chevron-right"></i></a>
+          <a class="linkCatProd" catProdTienda="equipOpticos">Equipos<i class="fas fa-chevron-right"></i></a>
+          <a class="linkCatProd" catProdTienda="herraGenerales">Herramientas<i class="fas fa-chevron-right"></i></a>
+          <a class="linkCatProd" catProdTienda="prodLimpieza">Productos De Limpieza<i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="subCatProd">
+          <div class="subCatProdItem" catProdTienda="fibraOptica">
+            <div class="linkSubCatProducto">
+              <button class="btnBackSubProd" title="Regresar"><i class="far fa-arrow-alt-circle-left"></i></button>
+              <h2 class="subTituloMenu">Fibra Optica</h2>
+              <a (click)="mostrarPagina1('productosP', 'fibraMonomodo')" subSubProd="fibraMonomodo">Fibra Optica Monomodo</a>
+              <a subSubProd="fibraMultimodo">Fibra Optica Multimodo</a>
+              <a subSubProd="fibraDrop">Fibra Optica Drop</a>
+            </div>
+            <div class="subSubImg">
+              <a><img src="assets/ImgMenuProductos/banerSubMenuFibra.png" alt="banerFibra"></a>
+              <a><img src="assets/ImgMenuProductos/subMenuGaleriaFibra2.png" alt="galeriaFibra2"></a>
+            </div>
+          </div>
+          <div class="subCatProdItem" catProdTienda="conectOptica">
+            <div class="linkSubCatProducto">
+              <button class="btnBackSubProd" title="Regresar"><i class="far fa-arrow-alt-circle-left"></i></button>
+              <h2 class="subTituloMenu">Conectividad Optica</h2>
+              <a (click)="mostrarPagina1('productosP/productoConectividadP', 'fibraMonomodo')">Patch Core</a>
+              <a>Pigtails</a>
+              <a>Splitters</a>
+              <a>Conectores Rapidos</a>
+            </div>
+            <div class="subSubImg">
+              <a><img src="assets/ImgMenuProductos/banerSubMenuFibra.png" alt="banerFibra"></a>
+              <a><img src="assets/ImgMenuProductos/subMenuGaleriaFibra2.png" alt="galeriaFibra2"></a>
+            </div>
+          </div>
+          <div class="subCatProdItem" catProdTienda="instInternas">
+            <div class="linkSubCatProducto">
+              <button class="btnBackSubProd" title="Regresar"><i class="far fa-arrow-alt-circle-left"></i></button>
+              <h2 class="subTituloMenu">Instalaciones Internas</h2>
+              <a (click)="mostrarPagina1('productosP/productoInstIntP', 'prodRacks')">Racks</a>
+              <a>Bandejas ODF</a>
+              <a>Cajas De Distribucion FTTH</a>
+              <a>Rocetas</a>
+            </div>
+            <div class="subSubImg">
+              <a><img src="assets/ImgMenuProductos/banerSubMenuFibra.png" alt="banerFibra"></a>
+              <a><img src="assets/ImgMenuProductos/subMenuGaleriaFibra2.png" alt="galeriaFibra2"></a>
+            </div>
+          </div>
+          <div class="subCatProdItem" catProdTienda="instExternas">
+            <div class="linkSubCatProducto">
+              <button class="btnBackSubProd" title="Regresar"><i class="far fa-arrow-alt-circle-left"></i></button>
+              <h2 class="subTituloMenu">Instalaciones Externas</h2>
+              <a (click)="mostrarPagina1('productosP/productoInstExternasP', 'prodMufla')">Muflas</a>
+              <a>Bandejas Para Ampliación</a>
+              <a>Cto-NAP</a>
+              <a>Ferreteria</a>
+            </div>
+            <div class="subSubImg">
+              <a><img src="assets/ImgMenuProductos/banerSubMenuFibra.png" alt="banerFibra"></a>
+              <a><img src="assets/ImgMenuProductos/subMenuGaleriaFibra2.png" alt="galeriaFibra2"></a>
+            </div>
+          </div>
+          <div class="subCatProdItem" catProdTienda="equipOpticos">
+            <div class="linkSubCatProducto">
+              <button class="btnBackSubProd" title="Regresar"><i class="far fa-arrow-alt-circle-left"></i></button>
+              <h2 class="subTituloMenu">Equipos</h2>
+              <a (click)="mostrarPagina1('productosP/productoEquiposP', 'prodOtdrs')">OTDR</a>
+              <a>Fusionadora</a>
+              <a>Media Converter</a>
+              <a>Medicion De Potencia</a>
+              <a>Kit De Herramientas</a>
+            </div>
+            <div class="subSubImg">
+              <a><img src="assets/ImgMenuProductos/banerSubMenuFibra.png" alt="banerFibra"></a>
+              <a><img src="assets/ImgMenuProductos/subMenuGaleriaFibra2.png" alt="galeriaFibra2"></a>
+            </div>
+          </div>
+          <div class="subCatProdItem" catProdTienda="herraGenerales">
+            <div class="linkSubCatProducto">
+              <button class="btnBackSubProd" title="Regresar"><i class="far fa-arrow-alt-circle-left"></i></button>
+              <h2 class="subTituloMenu">Herramientas</h2>
+              <a (click)="mostrarPagina1('productosP/productoHerramientasP', 'prodOtdrs')">Para Corte</a>
+              <a>Para Medir</a>
+              <a>Para Pelar</a>
+              <a>Termocontraibles</a>
+            </div>
+            <div class="subSubImg">
+              <a><img src="assets/ImgMenuProductos/banerSubMenuFibra.png" alt="banerFibra"></a>
+              <a><img src="assets/ImgMenuProductos/subMenuGaleriaFibra2.png" alt="galeriaFibra2"></a>
+            </div>
+          </div>
+          <div class="subCatProdItem" catProdTienda="prodLimpieza">
+            <div class="linkSubCatProducto">
+              <button class="btnBackSubProd" title="Regresar"><i class="far fa-arrow-alt-circle-left"></i></button>
+              <h2 class="subTituloMenu">Productos De Limpieza</h2>
+              <a (click)="mostrarPagina1('productosP/productoLimpiezaP', 'prodCotonetes')">Cotonetes</a>
+              <a>Limpiador De Acopladores</a>
+              <a>Paños</a>
+              <a>Alcohol Isopropilico</a>
+            </div>
+            <div class="subSubImg">
+              <a><img src="assets/ImgMenuProductos/banerSubMenuFibra.png" alt="banerFibra"></a>
+              <a><img src="assets/ImgMenuProductos/subMenuGaleriaFibra2.png" alt="galeriaFibra2"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="banerOpcional">
+    <div class="slideBaner">
+      <div class="navFlechas">
+        <i class="fas fa-chevron-left navBtnIz"></i>
+        <i class="fas fa-chevron-right navBtnDer"></i>
+      </div>
+      <ul class="banerLateralListaU">
+        <li id="baner1" class="styleLista">
+          <img src="assets/ImgBaner/baner2MorePx.png" class="imgLista" alt="foto 2"/>
+          <div class="centraT">
+            <div class="mensajeIzquierda">
+              <h2>Calidad Garantizada</h2>
+              <h1>Productos De Fibra Optica</h1>
+              <button class="btnBanerContacto" (click)="mostrarPagina('contactosP')">Contáctenos</button>
+            </div>
+            <div class="mensajeDerecha">
+              <h1>Tecnologia En Patchcores</h1>
+            </div>
+          </div>
+        </li>
+        <li id="baner2" class="styleLista">
+            <img src="assets/ImgBaner/baner5.png" class="imgLista" alt="foto 5"/>
+            <div class="centraT">
+              <div class="mensajeIzquierda">
+                <h2>Trabajos Garantizados</h2>
+                <h1>Venta De Ferreteria</h1>
+                <button class="btnBanerContacto" (click)="mostrarPagina('contactosP')">Contáctenos</button>
+              </div>
+              <div class="mensajeDerecha">
+                <h1>Construccion De Redes FTTH</h1>
+              </div>
+            </div>
+        </li>
+        <li id="baner3" class="styleLista">
+          <img src="assets/ImgBaner/baner3MorePx.png" class="imgLista" alt="foto 3"/>
+          <div class="centraT">
+            <div class="mensajeIzquierda">
+              <h2>Exelencia En Servicio</h2>
+              <h1>Venta De Equipos de Medicion</h1>
+              <button class="btnBanerContacto" (click)="mostrarPagina('contactosP')">Contáctenos</button>
+            </div>
+            <div class="mensajeDerecha">
+              <h1>Certificacion De Enlaces FTTH</h1>
+            </div>
+          </div>
+        </li>
+        <li id="baner4" class="styleLista">
+          <img src="assets/ImgBaner/baner4MorePx.png" class="imgLista" alt="foto 4"/>
+          <div class="centraT">
+            <div class="mensajeIzquierda">
+              <h2>Puntualidad En La Entrega</h2>
+              <h1>Venta De Racks Y Gabinetes</h1>
+              <button class="btnBanerContacto" (click)="mostrarPagina('contactosP')">Contáctenos</button>
+            </div>
+            <div class="mensajeDerecha">
+              <h1>Instalacion De Gabinetes</h1>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="barraCirculos">
+        <a class="circulo1"></a>
+        <a class="circulo2"></a>
+        <a class="circulo3"></a>
+        <a class="circulo4"></a>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet> 
+  <div class="footerPrincipal">
+    <div class="barraSocial">
+      <img src="assets/ImgRedesSociales/facebook.png" onClick="window.open('//angular.io/guide/animations')" alt="logo facebook"/>
+      <img src="assets/ImgRedesSociales/youtube.png" alt="logo youtube"/>
+      <img src="assets/ImgRedesSociales/instagram.png" alt="Logo Instagram"/>
+      <img src="assets/ImgRedesSociales/twitter.png" alt="Logo twitter"/>
+    </div>
+    <div class="columnasDatos">
+      <div class="infRedesS">
+        <div class="cabezaRedesSociales">
+          <img src="assets/Imagenes/LogoTLC-AzulClaro.png" class="imgFooterLogo" alt="LogoTLC"/>
+        </div>
+        <div class="cuerpoRedesSociales">
+          <div class="clasBotones">
+            <a>Facebook</a>
+            <a>YouTube</a>
+            <a>Instagram</a>
+            <a>Twitter</a> 
+          </div>
+          <p>Puedes saber mas de nosotros y de lo que hacemos visitando una de nuestras redes sociales.</p>
+        </div>
+      </div>
+      <div class="infDir">
+        <div class="cabezaDirecciones">
+          <h1>Nuestras direcciones</h1>
+        </div>
+        <div class="cuerpoDirecciones">
+          <h2><i class="fas fa-map-marked-alt"></i> Direccion oficina central:</h2>
+          <p>Av. Uruguay #471 entre Av.Montes y Perú (cerca Terminal de Buses)</p>
+          <p>La Paz - Bolivia</p>
+          <h2><i class="fas fa-book"></i> Contactos:</h2>
+          <p>Telefono: (+591)2-2282563</p>
+          <p>Celular: (+591)73008000</p>
+          <h2><i class="fas fa-map-marked-alt"></i> Direccion oficina sucursal:</h2>
+          <p>C. Jose Antonio Zegada #16 entre C.Lucas Mendoza y Alcides Arguedas</p>
+          <p>Cochabamba - Bolivia</p>
+          <h2><i class="fas fa-book"></i> Contactos:</h2> 
+          <p>Telefono: (+591)44444444</p>
+          <p>Celular: (+591)72535453</p>
+        </div>
+      </div>
+      <div class="infCot">
+          <div class="cabezaCotizacion">
+            <h1>Contactanos para una cotizacion</h1>
+          </div>
+          <div class="cuerpoCotizacion">
+            <p>Si quieres una atencion personalizada contacta con uno de nuestros vendedores dejando tu nombre,
+                tu correo electronico y los productos de los cuales quieres una cotizacion.</p>
+            <form class="formulario">
+                <div class="grupoForm">
+                    <input class="inputForm" type="text" id="nombreC"  required><span class="barra"></span>
+                    <i class="far fa-user"></i>
+                    <label for="">Nombre</label>
+                </div>
+                <div class="grupoForm">
+                    <input class="inputForm" type="text" id="consultaC"  required><span class="barra"></span>
+                    <i class="far fa-edit"></i>
+                    <label for="">Consulta</label>
+                </div>
+                <div class="grupoForm">
+                    <input class="inputForm" type="email" id="correoC"  required><span class="barra"></span>
+                    <i class="fas fa-at"></i>
+                    <label for="">Correo electronico</label>
+                </div>
+                <button type="submit" class="botonFormulario">Cotizar</button>
+            </form>
+          </div>
+      </div>
+    </div>
+    <div class="desarrollado">
+      <div class="contDesarrollador">
+          <h1>© All Rights Reserved | Design by </h1>
+          <p>ances-cali-lima@hotmail.com</p>
+      </div>
+    </div>
+  </div>
+</div>

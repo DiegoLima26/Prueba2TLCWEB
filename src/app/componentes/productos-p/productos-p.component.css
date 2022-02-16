@@ -1,0 +1,145 @@
+@font-face
+{
+  font-family: "Helvetica-Rounded";
+  src: url(../../../fonts/Helvetica-Rounded.otf);
+}
+@font-face
+{
+  font-family: "futura-light-bt";
+  src: url(../../../fonts/futura-light-bt.ttf);
+}
+
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡------------- INICIO CLASES DEL DIV claseProductos ------------!!!!!!!!!!!!!!!!!*/
+.claseProductos
+{
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  background-color: rgb(255, 255, 255);
+}
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡------------- FIN CLASES DEL DIV claseProductos ------------!!!!!!!!!!!!!!!!!*/
+
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡------------- Incio CLASES DEL DIV clase tituloCategoriaProducto ------------!!!!!!!!!!!!!!!!!*/
+.tituloCategoriaProducto
+{
+  width: 95%;
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding: 25px 10px;
+  background-color: rgb(255, 255, 255);
+}
+.tituloCategoriaProducto i
+{
+  color: rgb(245, 124, 0);
+  padding-right: 20px;
+}
+.tituloCategoriaProducto h1
+{
+  margin: 0px;
+  font-family: futura-light-bt;
+  font-size: 18px;
+  font-weight: 550;
+  color: rgb(50, 58, 57);
+}
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡------------- Fin clases del div clase tituloCategoriaProducto ------------!!!!!!!!!!!!!!!!!*/
+
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡------------- Inicio clases del div cuerpoPrincipalProductos ------------!!!!!!!!!!!!!!!!!*/
+
+.cuerpoPrincipalProductos
+{
+  box-sizing: border-box;
+  margin: 0px auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡------------- Fin clases del div cuerpoPrincipalProductos ------------!!!!!!!!!!!!!!!!!*/
+
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡------------- Inicio clases del div contenedorProductos ------------!!!!!!!!!!!!!!!!!*/
+
+.contenedorProductos
+{
+  box-sizing: border-box;
+  margin: 0px;
+  border-right: 1px solid rgba(245, 124, 0,0.3);
+}
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡------------- Inicio clases del div lateralMenuProductos ------------!!!!!!!!!!!!!!!!!*/
+
+.lateralMenuProductos
+{
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding: 20px 0px;
+  width: 95%;
+}
+.seccionBusquedaRapida
+{
+  margin: 0px;
+  padding: 5px;
+  width: 90%;
+  box-sizing: border-box;
+  background-color: transparent;
+  display: table;
+}
+.seccionBusquedaRapida .fastBusqueda
+{
+  margin: 0px; 
+  padding: 10px 10px;
+  background: transparent;
+  color: rgb(113,129,141);
+  font-family: futura-light-bt;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid rgb(245, 124, 0);
+}
+.seccionBusquedaRapida .fastBusqueda:focus
+{
+  outline: none;
+  color: rgb(99,101,102);
+  font-size: 18px;
+}
+.seccionBusquedaRapida > i
+{
+  color: rgb(245, 124, 0);
+  cursor: pointer;
+}
+.seccionCategoriasProd
+{
+  margin: 0px auto;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: futura-light-bt;
+}
+.seccionCategoriasProd > h1
+{
+  margin: 0px;
+  padding: 15px 0px;
+  color: rgb(36, 36, 187);
+  font-size: 20px;
+  font-weight: 500;
+}
+.seccionCategoriasProd > a
+{
+  margin: 0px;
+  padding-bottom: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(99, 101, 102);
+  display: block;
+  text-decoration: none;
+}
+.seccionCategoriasProd > a.enlaceON
+{
+  text-decoration: underline;
+}
+.seccionCategoriasProd > a:hover
+{
+  font-size: 20px;
+  color: rgb(245, 124, 0);
+}
+.seccionCategoriasProd > a > i
+{
+  margin: 0px;
+  color: rgba(245, 124, 0, 0.8);
+}
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡------------- Fin clases del div lateralMenuProductos ------------!!!!!!!!!!!!!!!!!*/

@@ -1,0 +1,668 @@
+@font-face 
+{
+  font-family: "Helvetica-Rounded";
+  src: url(../../../fonts/Helvetica-Rounded.otf);
+}
+@font-face 
+{
+  font-family: "futura-light-bt";
+  src: url(../../../fonts/futura-light-bt.ttf);
+}
+
+.tituloContactos
+{
+  width: 95%;
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding: 25px 10px;
+  background-color: rgb(255, 255, 255);
+}
+.tituloContactos i
+{
+  color: rgb(245, 124, 0);
+  padding-right: 20px;
+}
+.tituloContactos h1
+{
+  margin: 0px;
+  font-family: futura-light-bt;
+  font-size: 25px;
+  font-weight: 900;
+  color: rgb(36, 36, 187);
+}
+/*----------------------- Clases del div principal (clasContactos) ---------------------*/
+.clasContactos
+{
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+/*----------------------- Fin clases del div principal (clasContactos) -----------------*/
+
+/*----------------------- Clases del div (tituloTx) ---------------------*/
+.tituloTx
+{
+  width: 90%;
+  margin: 0px auto;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+}
+.tituloTx > h1
+{
+  margin: 0px;
+  padding: 15px 0px;
+  width: 25%;
+  color: rgb(36, 36, 187);
+  font-family: Helvetica-Rounded;
+  font-size: 36px;
+  border-bottom: 1px solid rgb(245, 124, 0);
+}
+/*----------------------- Fin clases del div (tituloTx) -----------------*/
+
+/*----------------------- Clases del div (bannerContactos) ---------------------*/
+.bannerContacto
+{
+  margin: 0px auto;
+  box-sizing: border-box;
+  width: 80%;
+  position: relative;
+}
+.bannerContacto img
+{
+  width: 100%;
+  object-fit: cover;
+}
+.centraT
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 0px 3%;
+  width: 94%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: futura-light-bt;
+  color: rgb(36, 36, 187);
+}
+.mensajeIzquierda 
+{
+  margin: 0px;
+  padding-left: 50px;
+  padding-right: 30px;
+  border-right: 2px solid rgb(36, 36, 187);
+}
+.mensajeIzquierda > p
+{
+  margin: 0px;
+  padding: 5px 10px;
+  font-family: futura-light-bt;
+  font-size: 30px;
+  color: rgb(99, 102, 101);
+}
+.mensajeIzquierda > p span
+{
+  margin: 0px;
+  color: rgb(245, 124, 0);
+}
+/*----------------------- Fin clases del div (bannerContactos) ---------------------*/
+
+/*----------------------- Clases del div (contCont) ---------------------*/
+.contCont
+{
+  margin: 0px auto;
+  width: 90%;
+  box-sizing: border-box;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+/*----------------------- Fin clases del div (contCont) -----------------*/
+
+.cabezaMetodo
+{
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 20px 0px;
+  color: rgb(36, 36, 187);
+  font-family: futura-light-bt;
+  display: flex;
+  align-items: center;
+}
+.cabezaMetodo > h1
+{
+  margin: 0px;
+  font-size: 40px;
+  font-weight: 500;
+  /* border-bottom: 1px solid rgb(245, 124, 0); */
+}
+.cabezaMetodo > i
+{
+  padding-left: 25px;
+  color: rgb(245, 124, 0);
+  font-size: 30px;
+  cursor: pointer;
+}
+.cuerpoMetodo
+{
+  margin: 0px auto;
+  box-sizing: border-box;
+  width: 95%;
+}
+.cuerpoCotizacion
+{
+  margin: 0px auto;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.parrafoCot
+{
+  margin: 0px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  display: table;
+}
+.parrafoCot > p
+{
+  margin: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  color:rgb(99, 102, 101);
+  font-family: futura-light-bt;
+  font-size: 20px;
+}
+.formulario
+{
+  margin: 0px;
+  box-sizing: border-box;
+  width: 90%;
+  text-align: center;
+  padding: 5px 25px;
+}
+.grupoForm
+{
+  position: relative;
+  margin: 0px;
+  padding: 5px;
+}
+.inputForm
+{
+  margin: 10px 0px;
+  width: 95%;
+  padding: 10px;
+  background: none;
+  display: block;
+  color: rgb(99,101,102);
+  font-family: futura-light-bt;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid rgb(50, 58, 57);
+}
+input:focus
+{
+  outline: none;
+  color: rgb(99,101,102);
+  font-size: 18px;
+}
+label
+{
+  color: rgb(113,129,141);
+  font-family: futura-light-bt;
+  font-size: 16px;
+  position: absolute;
+  left: 15px;
+  top: 25px;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+.grupoForm i
+{
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+input:focus~label,
+input:valid~label
+{
+  top: -3px;
+  font-size: 14px;
+  color: rgb(245, 124, 0);
+}
+.barra
+{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.barra::before
+{
+  content: "";
+  height: 1px;
+  width: 0%;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  background-color: rgb(245, 124, 0);
+  transition: .5s ease width;
+}
+input:focus~.barra::before
+{
+  width: 100%;
+}
+.botonFormulario
+{
+  margin: 20px auto;
+  padding: 5px 20px;
+  font-family: futura-light-bt;
+  font-size: 16px;
+  font-weight: 800;
+  background: none;
+  color: rgb(99, 101, 102);
+  border: 1px solid rgb(36, 36, 187);
+  border-radius: 10px;
+  display: block;
+  cursor:pointer;
+}
+.botonFormulario.botonFormOn
+{
+  color: rgb(245, 124, 0);
+  cursor: pointer;
+}
+.cuerpoMetodoCliente
+{
+  margin: 0px auto;
+  width: 95%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.parrafo1
+{
+  margin: 0px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  display: table;
+}
+.parrafo1 > p
+{
+  margin: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  color:rgb(99, 102, 101);
+  font-family: futura-light-bt;
+  font-size: 20px;
+}
+.parrafo2
+{
+  margin: 0px;
+  padding-left: 20px;
+  font-family: futura-light-bt;
+}
+.parrafo2 > h1
+{
+  color: rgb(36, 36, 187);
+  font-size: 26px;
+}
+.parrafo2 > h2
+{
+  color: rgb(245, 124, 0);
+  font-size: 18px;
+  font-weight: 500;
+}
+.parrafo2 > p
+{
+  color: rgb(99, 102, 101);
+  font-size: 16px;
+}
+/*----------------------- Clases del div (con1) ---------------------*/
+.contTarjContacto
+{
+  margin: 20px 0px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  /* box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.22); */
+}
+.con1
+{
+  margin:0px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+
+.headerCon1
+{
+  width: 90%;
+  margin: 0px auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(245, 124, 0);
+}
+.headerCon1 > h1
+{
+  margin: 0px;
+  padding: 10px 5px;
+  color: rgb(36, 36, 187);
+  font-size: 35px;
+  font-family: futura-light-bt;
+}
+.headerCon1 > p
+{
+  margin: 0px;
+  color: rgb(245, 124, 0);
+  font-size: 18px;
+  font-weight: 550;
+  font-family: futura-light-bt;
+}
+.bodyCon1
+{
+  width: 90%;
+  padding-top: 30px;
+  box-sizing: border-box;
+  margin: 0px auto;
+}
+.bodyCon1 > p
+{
+  margin: 0px;
+  padding: 10px;
+  color: rgb(99, 102, 101);
+  font-size: 15px;
+  font-family: futura-light-bt;
+  line-height: 20px;
+}
+.bodyCon1 p i
+{
+  box-sizing: border-box;
+  color: rgb(36, 36, 187);
+  padding-right: 10px;
+}
+
+/*----------------------- Fin clases del div (con1) -----------------*/
+
+/*----------------------- Clases del div (con2) ---------------------*/
+
+.con2
+{
+  margin: 0px auto;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  border-radius: 10px;
+}
+.con2C 
+{
+  margin: auto;
+  box-sizing: border-box;
+  padding: 4px; 
+  width: 100%;
+  height: 400px;
+}
+/*----------------------- Fin clases del div (con2) -----------------*/
+
+
+/*----------------------- Inicio estilos css para estilos responsivos ---------------------*/
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Codigo para pantallas como minimo de 0px y maximo de 400px!!!!!!!!!!!-------*/
+
+@media only screen and (max-width: 400px) 
+{
+  /*----------------------- Clases del div (tituloTx) ---------------------*/
+  .tituloTx > h1
+  {
+    padding: 5px;
+    font-size: 25px;
+    width: 60%;
+  }
+  /*----------------------- Fin clases del div (tituloTx) -----------------*/
+  /*----------------------- Clases del div (contCont) ---------------------*/
+  .contCont
+  {
+    margin: 0px auto;
+    padding: 5px;
+  }
+  /*----------------------- Fin clases del div (contCont) -----------------*/
+  /*----------------------- Clases del div (con1) ---------------------*/
+  .contTarjContacto
+  {
+    margin: 10px 0px;
+    padding: 20px 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .con1
+  {
+    margin:0px;
+    padding-top: 5px;
+  }
+  .headerCon1
+  {
+    width: 90%;
+    padding: 5px;
+  }
+  .headerCon1 > h1
+  {
+    font-size: 22px;
+  }
+  .headerCon1 > p
+  {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .bodyCon1
+  {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  /*----------------------- Fin clases del div (con1) -----------------*/
+  /*----------------------- Clases del div (con2) ---------------------*/
+  .con2
+  {
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .con2C 
+  {
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 5px; 
+    width: 340px;
+    height: 340px;
+  }
+  /*----------------------- Fin clases del div (con2) -----------------*/    
+}
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Fin codigo para pantallas como minimo de 0px y maximo de 400px!!!!!!!!!!!-------*/
+
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Codigo para pantallas como minimo de 401px y maximo de 767px!!!!!!!!!!!-------*/
+
+@media only screen and (max-width: 767px) and (min-width: 401px)
+{
+  /*----------------------- Clases del div (tituloTx) ---------------------*/
+  .tituloTx > h1
+  {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 30px;
+    font-size: 35px;
+    font-weight:700;
+    letter-spacing: 6px;
+  }
+  /*----------------------- Fin clases del div (tituloTx) -----------------*/
+  /*----------------------- Clases del div (contCont) ---------------------*/
+  .contCont
+  {
+    margin: 0px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 248, 245);
+  }
+  /*----------------------- Fin clases del div (contCont) -----------------*/
+  /*----------------------- Clases del div (con1) ---------------------*/
+  .con1
+  {
+    margin:0px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+  }
+  .headerCon1
+  {
+    width: 90%;
+    padding: 10px;
+  }
+  .headerCon1 > h1
+  {
+    font-size: 25px;
+  }
+  .headerCon1 > p
+  {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .bodyCon1
+  {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  /*----------------------- Fin clases del div (con1) -----------------*/
+  /*----------------------- Clases del div (con2) ---------------------*/
+  .con2
+  {
+    margin: 0px auto;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+    object-fit: none;
+  }
+  .con2C 
+  {
+    margin: auto;
+    box-sizing: border-box;
+    padding: 5px; 
+    width: 100%;
+    height: 450px;
+  }
+  /*----------------------- Fin clases del div (con2) -----------------*/
+}
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Fin codigo para pantallas como minimo de 0px y maximo de 767px!!!!!!!!!!!-------*/
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Codigo para pantallas como minimo de 768px y maximo de 1000px!!!!!!!!!!!-------*/
+
+@media only screen and (max-width: 1000px) and (min-width: 768px)
+{
+  /*----------------------- Clases del div (tituloTx) ---------------------*/
+  .tituloTx > h1
+  {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    font-size: 55px;
+    font-weight:700;
+    letter-spacing: 8px;
+  }
+  /*----------------------- Fin clases del div (tituloTx) -----------------*/
+  /*----------------------- Clases del div (contCont) ---------------------*/
+  .contCont
+  {
+    margin: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 248, 245);
+  }
+  /*----------------------- Fin clases del div (contCont) -----------------*/
+  /*----------------------- Clases del div (con1) ---------------------*/
+  .con1
+  {
+    margin:0px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+  }
+  .headerCon1
+  {
+    width: 90%;
+    padding: 20px;
+  }
+  .headerCon1 > h1
+  {
+    font-size: 35px;
+  }
+  .headerCon1 > p
+  {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .bodyCon1
+  {
+    width: 90%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .bodyCon1 > p
+  {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  /*----------------------- Fin clases del div (con1) -----------------*/
+  /*----------------------- Clases del div (con2) ---------------------*/
+  .con2
+  {
+    margin: 0px auto;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+    object-fit: none;
+  }
+  .con2C 
+  {
+    margin: auto;
+    box-sizing: border-box;
+    padding: 5px; 
+    width: 100%;
+    height: 450px;
+  }
+  /*----------------------- Fin clases del div (con2) -----------------*/
+}
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Fin codigo para pantallas como minimo de 768px y maximo de 1000px!!!!!!!!!!!-------*/
+
+/*----------------------- Fin estilos css para estilos responsivos ---------------------*/

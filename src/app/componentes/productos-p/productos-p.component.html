@@ -1,0 +1,27 @@
+<div class="claseProductos">
+    <div class="tituloCategoriaProducto">
+        <h1><i class="fas fa-home"></i>> Productos > Fibra Optica</h1>
+    </div>
+    <div class="cuerpoPrincipalProductos">
+        <div class="contenedorProductos">
+            <router-outlet></router-outlet>   
+        </div>
+        <div class="lateralMenuProductos">
+            <div class="seccionBusquedaRapida">
+                <input class="fastBusqueda"  name="buscarMenuFast" type="text" placeholder="Busca tu producto">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="seccionCategoriasProd">
+                <h1>Categorias:</h1>
+                <a catEnlceProd="fibraOpt" [routerLink] ="['/productosP/productofibraP']"><i class="far fa-folder"></i> Fibra Optica</a>
+                <a catEnlceProd="conectOpt" [routerLink] ="['/productosP/productoConectividadP']"><i class="far fa-folder"></i> Conectividad Optica</a>
+                <a catEnlceProd="instIntOpt" [routerLink] ="['/productosP/productoInstIntP']"><i class="far fa-folder"></i> Instalaciones Internas</a>
+                <a catEnlceProd="instExtOpt"><i class="far fa-folder"></i> Instalaciones Externas</a>
+                <a catEnlceProd="equiposOpt"><i class="far fa-folder"></i> Equipos</a>
+                <a catEnlceProd="herramiOpt"><i class="far fa-folder"></i> Herramientas</a>
+                <a catEnlceProd="prodLimOpt"><i class="far fa-folder"></i> Productos De Limpieza</a>
+            </div>
+        </div>
+    </div>
+
+</div>
